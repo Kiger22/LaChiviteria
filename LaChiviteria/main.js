@@ -94,6 +94,7 @@ const FAMILIES = [
 const products = document.querySelector(".products");
 
 const printProduct = (Products) => {
+
   products.innerHTML = ""; // Limpiar productos anteriores
   for (const Product of Products) {
     const divProduct = document.createElement("div");
@@ -139,7 +140,7 @@ const printProduct = (Products) => {
     divProduct.append(cestaImg2);
     products.append(divProduct);
 
-    divProduct.className = "cardProduct";
+    divProduct.className = "cardProduct ";
     imgProduct.className = "Image";
     nameProduct.className = "Name";
     priceProduct.className = "Price";
@@ -152,6 +153,11 @@ const printProduct = (Products) => {
   }
 }
 printProduct(PRODUCTS);
+
+//aside de filtros
+const aside = document.querySelector(".Services");
+const selectFamily = document.querySelector('.select');
+const article = document.querySelector(".Cards-Serv");
 
 let selectedFamily = '';
 let maxPrice = Infinity;
@@ -174,7 +180,7 @@ const createFilterFamily = () => {
     option.textContent = family;
     option.className = 'family';
     option.value = family;
-    selectFamily.append(option);
+    selectFamily.appendChild(option);
   }
 
   selectFamily.addEventListener("change", (e) => {
@@ -186,9 +192,6 @@ const createFilterFamily = () => {
 createFilterFamily();
 
 const createFilterPrice = () => {
-
-  const aside = document.querySelector(".Services");
-  const selectFamily = document.querySelector('.select');
 
   const labelPrice = document.createElement("label");
   labelPrice.className = "labelPrice flex-container";
@@ -224,12 +227,24 @@ const applyCombinedFilters = () => {
     return (selectedFamily === '' || product.Family === selectedFamily) &&
       (product.price <= maxPrice);
   });
-  printProduct(FILTERED);
+
+  if (FILTERED.length === 0) {
+    const randomProducts = PRODUCTS.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+    const message = document.createElement("h3");
+    message.textContent = "No se encontraron productos con los filtros introducidos. Aquí tienes algunos productos sugeridos:";
+    aside.insertBefore(message, article);
+
+    printProduct(randomProducts);
+
+  } else {
+    printProduct(FILTERED);
+
+  }
 };
 
+
 const createCleanButton = () => {
-  const aside = document.querySelector(".Services");
-  const selectFamily = document.querySelector('.select');
 
   const buttonClean = document.createElement("button");
   buttonClean.id = "buttonClean";
@@ -250,6 +265,6 @@ const createCleanButton = () => {
     printProduct(PRODUCTS);
   });
 
-  aside.insertBefore(buttonClean, selectFamily);
+  aside.insertBefore(buttonClean, article);
 };
 createCleanButton();

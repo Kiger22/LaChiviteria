@@ -86,6 +86,8 @@
 .flex-container {
   display: flex;
   align-items: center;
+  align-content: center;
+  justify-content:center;
   justify-items: center;
   text-align: center;
   gap: var(--kg-gap-m);
@@ -182,9 +184,9 @@ a:hover, a:active, a:focus {
 }
 
 .langSelect select{
-	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+  appearance: none;
 }
 
 .langSelect:hover{
@@ -336,7 +338,7 @@ a:hover, a:active, a:focus {
   background-color:var(--kg-body-background) ;
   grid-template-columns: 1fr 3fr;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 
 .productsTitles > h3{
@@ -350,7 +352,7 @@ a:hover, a:active, a:focus {
                     /* SERVICIOS (FAMILY) */
 
 .Services{
-  background-color: var(--kg-card-background);
+  background-color: transparent;
   flex-direction: column;
   margin-top: var(--kg-margin-l);
   padding-top: var(--kg-padding-l);
