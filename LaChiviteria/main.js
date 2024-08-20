@@ -1,85 +1,165 @@
 // Array de Productos
 const PRODUCTS = [
   {
-    name: 'Completo',
-    price: 3.50,
-    stars: 3,
-    ingredients: "Lechuga, Tomate, Jamon, Huevo frito",
+    name: 'Chivito Clásico',
+    price: 5.00,
+    stars: 4,
+    ingredients: 'Lechuga, Tomate, Jamón, Huevo Frito, Mayonesa',
     Family: 'Chivito',
-    image: './assets/chivito2.png'
+    image: 'public/assets/chivito.png'
   },
   {
-    name: 'Comun',
-    price: 9.50,
-    stars: 2,
-    ingredients: "",
-    Family: 'Chivito',
-    image: './assets/chivito.png'
-  },
-  {
-    name: 'X2',
+    name: 'Chivito Canadiense',
     price: 5.50,
     stars: 5,
-    ingredients: "",
+    ingredients: 'Lechuga, Tomate, Jamón, Panceta, Queso, Huevo Frito, Mayonesa',
     Family: 'Chivito',
-    image: './assets/chivitox2.png'
+    image: 'public/assets/chivitox2.png'
   },
   {
-    name: 'Completa',
-    price: 8.50,
+    name: 'Chivito al Pan',
+    price: 4.50,
     stars: 4,
-    ingredients: "",
-    Family: 'Hamburguesa',
-    image: './assets/Hamburguesa.png'
+    ingredients: 'Lechuga, Tomate, Jamón, Queso, Huevo Frito, Mayonesa',
+    Family: 'Chivito',
+    image: 'public/assets/chivito2.png'
   },
   {
-    name: 'Especial',
+    name: 'Chivito con Panceta',
+    price: 6.00,
+    stars: 5,
+    ingredients: 'Lechuga, Tomate, Jamón, Panceta, Queso, Huevo Frito, Salsa Golf',
+    Family: 'Chivito',
+    image: './assets/chivito_panceta.png'
+  },
+  {
+    name: 'Hamburguesa Clásica',
+    price: 3.50,
+    stars: 3,
+    ingredients: 'Lechuga, Tomate, Hamburguesa, Queso, Ketchup, Mostaza',
+    Family: 'Hamburguesa',
+    image: 'public/assets/Hamburguesa.png'
+  },
+  {
+    name: 'Hamburguesa Doble',
+    price: 4.50,
+    stars: 4,
+    ingredients: 'Lechuga, Tomate, Doble Hamburguesa, Doble Queso, Ketchup, Mostaza',
+    Family: 'Hamburguesa',
+    image: './assets/hamburguesa_doble.png'
+  },
+  {
+    name: 'Hamburguesa con Bacon',
+    price: 5.00,
+    stars: 4,
+    ingredients: 'Lechuga, Tomate, Hamburguesa, Bacon, Queso, Salsa Barbacoa',
+    Family: 'Hamburguesa',
+    image: './assets/hamburguesa_bacon.png'
+  },
+  {
+    name: 'Hamburguesa con Huevo',
+    price: 4.80,
+    stars: 4,
+    ingredients: 'Lechuga, Tomate, Hamburguesa, Queso, Huevo Frito, Mayonesa',
+    Family: 'Hamburguesa',
+    image: './assets/hamburguesa_huevo.png'
+  },
+  {
+    name: 'Pancho Clásico',
     price: 2.50,
     stars: 3,
-    ingredients: "",
+    ingredients: 'Salchicha, Pan, Ketchup, Mostaza',
     Family: 'Pancho',
-    image: './assets/pancho.png'
+    image: './assets/pancho_clasico.png'
   },
   {
-    name: 'Margarita',
-    price: 11.50,
+    name: 'Pancho con Queso',
+    price: 2.50,
     stars: 4,
-    ingredients: "",
-    Family: 'Pizzas',
-    image: './assets/pizzeta.png'
+    ingredients: 'Salchicha, Pan, Queso Fundido, Ketchup, Mostaza',
+    Family: 'Pancho',
+    image: './assets/pancho_queso.png'
   },
   {
-    name: 'Completa',
-    price: 10.50,
+    name: 'Pancho con Panceta',
+    price: 3.00,
     stars: 4,
-    ingredients: "",
-    Family: 'Hamburguesa',
-    image: './assets/chivito.png'
+    ingredients: 'Salchicha, Pan, Panceta, Ketchup, Mostaza, Mayonesa',
+    Family: 'Pancho',
+    image: './assets/pancho_panceta.png'
   },
   {
-    name: 'Completa',
-    price: 9.50,
-    stars: 4,
-    ingredients: "",
-    Family: 'Hamburguesa',
-    image: './assets/chivito.png'
-  },
-  {
-    name: 'Completa',
-    price: 7.50,
-    stars: 4,
-    ingredients: "",
-    Family: 'Hamburguesa',
-    image: './assets/chivito.png'
-  },
-  {
-    name: 'Completa',
+    name: 'Pancho Completo',
     price: 3.50,
     stars: 4,
-    ingredients: "",
-    Family: 'Hamburguesa',
-    image: './assets/chivito.png'
+    ingredients: 'Salchicha, Pan, Queso, Panceta, Salsa Golf',
+    Family: 'Pancho',
+    image: './assets/pancho_completo.png'
   },
+  {
+    name: 'Pizza Margarita',
+    price: 7.00,
+    stars: 5,
+    ingredients: 'Tomate, Queso Mozzarella, Albahaca, Aceite de Oliva',
+    Family: 'Pizza',
+    image: './assets/pizza_margarita.png'
+  },
+  {
+    name: 'Pizza Pepperoni',
+    price: 7.50,
+    stars: 5,
+    ingredients: 'Tomate, Queso Mozzarella, Pepperoni, Orégano',
+    Family: 'Pizza',
+    image: './assets/pizza_pepperoni.png'
+  },
+  {
+    name: 'Pizza Cuatro Quesos',
+    price: 8.00,
+    stars: 5,
+    ingredients: 'Queso Mozzarella, Queso Azul, Queso Parmesano, Queso Provolone',
+    Family: 'Pizza',
+    image: './assets/pizza_cuatro_quesos.png'
+  },
+  {
+    name: 'Pizza Napolitana',
+    price: 7.50,
+    stars: 4,
+    ingredients: 'Tomate, Queso Mozzarella, Anchoas, Aceitunas, Orégano',
+    Family: 'Pizza',
+    image: './assets/pizza_napolitana.png'
+  },
+  {
+    name: 'Pizza Hawaiana',
+    price: 7.00,
+    stars: 3,
+    ingredients: 'Tomate, Queso Mozzarella, Jamón, Piña',
+    Family: 'Pizza',
+    image: './assets/pizza_hawaiana.png'
+  },
+  {
+    name: 'Chivito Vegetariano',
+    price: 5.50,
+    stars: 4,
+    ingredients: 'Lechuga, Tomate, Huevo Frito, Queso, Salsa de Yogurt',
+    Family: 'Chivito',
+    image: './assets/chivito_vegetariano.png'
+  },
+  {
+    name: 'Hamburguesa Vegetariana',
+    price: 4.50,
+    stars: 4,
+    ingredients: 'Lechuga, Tomate, Hamburguesa de Garbanzos, Queso, Salsa de Yogurt',
+    Family: 'Hamburguesa',
+    image: './assets/hamburguesa_vegetariana.png'
+  },
+  {
+    name: 'Pancho Vegetariano',
+    price: 2.80,
+    stars: 3,
+    ingredients: 'Salchicha Vegetariana, Pan, Ketchup, Mostaza',
+    Family: 'Pancho',
+    image: './assets/pancho_vegetariano.png'
+  }
 ];
 
 // conjunto de familias de productos
@@ -87,7 +167,8 @@ const FAMILIES = [
   'Hamburguesa',
   'Chivito',
   'Pancho',
-  'Pizzas'
+  'Pizza',
+  'Ensalada'
 ];
 
 // Sección de Productos
@@ -108,7 +189,6 @@ const printProduct = (Products) => {
     const priceProduct = document.createElement("h3");
     const divStarsProduct = document.createElement("div");
     const cestaImg = document.createElement("img");
-    const cestaImg2 = document.createElement("img");
 
     for (let i = 1; i <= 5; i++) {
       const star = document.createElement("div");
@@ -125,8 +205,9 @@ const printProduct = (Products) => {
     nameProduct.textContent = Product.name;
     ingredientsProduct.textContent = Product.ingredients;
     priceProduct.textContent = `${Product.price} €`;
-    cestaImg.src = "./assets/bolsa-de-la-compra.png";
-    cestaImg2.src = "./assets/bolsa-de-la-compra-II.png";
+    const imgSrc1 = "public/assets/bolsa-de-la-compra.png";
+    const imgSrc2 = "public/assets/bolsa-de-la-compra´-menos.png";
+    cestaImg.src = imgSrc1
 
     divImgProduct.append(imgProduct);
     divInfoProduct.append(nameProduct);
@@ -137,7 +218,6 @@ const printProduct = (Products) => {
     divProduct.append(divInfoProduct);
     divProduct.append(divStarsProduct);
     divProduct.append(cestaImg);
-    divProduct.append(cestaImg2);
     products.append(divProduct);
 
     divProduct.className = "cardProduct ";
@@ -145,14 +225,28 @@ const printProduct = (Products) => {
     nameProduct.className = "Name";
     priceProduct.className = "Price";
     cestaImg.className = "cestaCompra";
-    cestaImg2.className = "cestaCompraOk";
 
     ingredientsProduct.className = "Ingredients";
     divStarsProduct.classList.add("Stars");
     divStarsProduct.classList.add("flex-container");
+
+    //cambio imagen de cesta
+
+    cestaImg.addEventListener("click", () => {
+      if (cestaImg.src.includes(imgSrc1)) {
+        cestaImg.src = imgSrc2;
+        cestaImg.style.opacity = 0.3;
+      } else {
+        cestaImg.src = imgSrc1;
+        cestaImg.style.opacity = 1;
+      }
+    });
+
   }
 }
 printProduct(PRODUCTS);
+
+
 
 //aside de filtros
 const aside = document.querySelector(".Services");
@@ -200,7 +294,7 @@ const createFilterPrice = () => {
   inputPrice.id = "inputPrice";
   inputPrice.type = "number";
   inputPrice.className = "inputPrice";
-  inputPrice.placeholder = "Busca por precio";
+  inputPrice.placeholder = "Precio";
   inputPrice.step = 2;
   inputPrice.min = 0;
   inputPrice.max = 20;
@@ -232,6 +326,7 @@ const applyCombinedFilters = () => {
     const randomProducts = PRODUCTS.sort(() => 0.5 - Math.random()).slice(0, 3);
 
     const message = document.createElement("h3");
+    message.id = "message";
     message.textContent = "No se encontraron productos con los filtros introducidos. Aquí tienes algunos productos sugeridos:";
     aside.insertBefore(message, article);
 
@@ -248,7 +343,7 @@ const createCleanButton = () => {
 
   const buttonClean = document.createElement("button");
   buttonClean.id = "buttonClean";
-  buttonClean.className = "cleanButton";
+  buttonClean.className = "inButton";
   buttonClean.textContent = "Limpiar búsqueda";
   buttonClean.type = "button";
 
@@ -261,6 +356,10 @@ const createCleanButton = () => {
 
     const inputPrice = document.querySelector("#inputPrice");
     inputPrice.value = '';
+
+    const message = document.querySelector("#message");
+    message.textContent = "";
+
 
     printProduct(PRODUCTS);
   });

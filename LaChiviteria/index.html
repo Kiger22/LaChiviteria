@@ -16,7 +16,7 @@
     <div class="logPrincipal">
       <img src="./assets/Logos/LogoPrincipal.png" class="logoHeader">
     </div>
-    <div class="Menu flex-container">
+    <div class="Menu ">
       <ul class="menuPrincipal flex-container">
         <li><a href="https://braseriaazara.wordpress.com/la-carta/">Historia</a></li>
         <li><a href="">Menu</a></li>
@@ -37,14 +37,18 @@
         </select>
       </form>
     </div>
+    <div class="flex-container">
+      <img id="Menu" src="public/assets/menu.svg" alt="">
+      <img id="MenuLogin" src="public/assets/expand.svg" alt="">
+    </div>
   </header>
 
   <main>
 
-    <!-- <img src="./assets/Decore2.png" id="decore" alt="">
+    <img src="./assets/Decore2.png" id="decore" alt="">
 
-    <section class="hero flex-container">
-      <article class="Content flex-container">
+    <section class="hero ">
+      <article class="Content grid-container">
         <div class="herocontent flex-container">
           <span class="Tagline">Tu mejor Lugar en el mundo</span>
           <h1>Ven a disfrutar, como nunca lo has hecho</h1>
@@ -62,15 +66,20 @@
           <img class="imgPrincipal" src="./assets/Chivito principal.png" alt="">
         </div>
       </article>
-    </section> -->
+    </section>
 
     <section class="Products grid-container">
+
+      <div class="productsTitles">
+        <h3 class="Tagline">Pedidos</h3>
+        <h2 class="Titles">Menu</h2>
+      </div>
 
       <aside class="Services flex-container">
 
         <article class="serviceTitles">
-          <h3 class="Tagline">Menu</h3>
-          <h2 class="Titles">La Carta</h2>
+          <h3 class="Tagline">Filtrar</h3>
+          <h2 class="Titles"></h2>
         </article>
 
         <select class="select">
@@ -108,11 +117,6 @@
 
       <article class="productsCards flex-container">
 
-        <div class="productsTitles">
-          <h3 class="Tagline">Pedidos</h3>
-          <h2 class="Titles">Selecciona tu comida</h2>
-        </div>
-
         <div class="products flex-container">
 
         </div>
@@ -122,7 +126,7 @@
 
     </section>
 
-    <!-- <section class="Testimonials grid-container">
+    <!--  <section class="Testimonials grid-container">
       <article id="Testimonials" class="Titles grid-container">
         <h3 class="Tagline">Testimonios</h3>
         <h2 class="Titles">Que dice la gente acerca de nosotros.</h2>
@@ -160,25 +164,43 @@
     <div class="NavColumn">
       <nav class="flex-container">
         <ul id="Company">
-          <h4>Company</h4>
+          <h2>Company</h2>
           <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Mobile</a></li>
+          <li><a href="#">Adress</a></li>
+          <li><a href="#">Maps</a></li>
         </ul>
         <ul id="Contact">
-          <h4>Contact</h4>
+          <h2>Contact</h2>
           <li><a href="#">Help/FAQ</a></li>
           <li><a href="#">Press</a></li>
-          <li><a href="#">Affilates</a></li>
+          <li><a href="#">Reservation</a></li>
         </ul>
         <ul id="More">
-          <h4>More</h4>
-          <li><a href="#">Airlinefees</a></li>
-          <li><a href="#">Airline</a></li>
-          <li><a href="#">Low fare tips</a></li>
+          <h2>More</h2>
+          <li><a href="#">Restaurant</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Pays</a></li>
         </ul>
       </nav>
     </div>
+    <select name="menuFooter" id="menuFooter">
+      <option value="">More >></option>
+      <optgroup label="Company">
+        <option value="About">About</option>
+        <option value="Adress">Adress</option>
+        <option value="Adress">Adress</option>
+      </optgroup>
+      <optgroup label="Contact">
+        <option value="Help/FAQ">Help/FAQ</option>
+        <option value="Press">Press</option>
+        <option value="Reservation">Reservation</option>
+      </optgroup>
+      <optgroup label="More">
+        <option value="Restaurant">Restaurant</option>
+        <option value="Delivery">Delivery</option>
+        <option value="Pays">Pays</option>
+      </optgroup>
+    </select>
     <div class="outbound flex-container">
       <div id="SocialN">
         <img src="./assets/Social2.png" alt="">
