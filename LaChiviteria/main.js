@@ -6,7 +6,7 @@ const PRODUCTS = [
     stars: 4,
     ingredients: 'Lechuga, Tomate, Jamón, Huevo Frito, Mayonesa',
     Family: 'Chivito',
-    image: 'public/assets/chivito.png'
+    image: '/assets/chivito.png'
   },
   {
     name: 'Chivito Canadiense',
@@ -14,7 +14,7 @@ const PRODUCTS = [
     stars: 5,
     ingredients: 'Lechuga, Tomate, Jamón, Panceta, Queso, Huevo Frito, Mayonesa',
     Family: 'Chivito',
-    image: 'public/assets/chivitox2.png'
+    image: '/assets/chivitox2.png'
   },
   {
     name: 'Chivito al Pan',
@@ -22,7 +22,7 @@ const PRODUCTS = [
     stars: 4,
     ingredients: 'Lechuga, Tomate, Jamón, Queso, Huevo Frito, Mayonesa',
     Family: 'Chivito',
-    image: 'public/assets/chivito2.png'
+    image: '/assets/chivito2.png'
   },
   {
     name: 'Chivito con Panceta',
@@ -30,7 +30,7 @@ const PRODUCTS = [
     stars: 5,
     ingredients: 'Lechuga, Tomate, Jamón, Panceta, Queso, Huevo Frito, Salsa Golf',
     Family: 'Chivito',
-    image: './assets/chivito_panceta.png'
+    image: '/assets/chivito_panceta.png'
   },
   {
     name: 'Hamburguesa Clásica',
@@ -38,7 +38,7 @@ const PRODUCTS = [
     stars: 3,
     ingredients: 'Lechuga, Tomate, Hamburguesa, Queso, Ketchup, Mostaza',
     Family: 'Hamburguesa',
-    image: 'public/assets/Hamburguesa.png'
+    image: '/assets/Hamburguesa.png'
   },
   {
     name: 'Hamburguesa Doble',
@@ -46,7 +46,7 @@ const PRODUCTS = [
     stars: 4,
     ingredients: 'Lechuga, Tomate, Doble Hamburguesa, Doble Queso, Ketchup, Mostaza',
     Family: 'Hamburguesa',
-    image: './assets/hamburguesa_doble.png'
+    image: '/assets/hamburguesa_doble.png'
   },
   {
     name: 'Hamburguesa con Bacon',
@@ -54,7 +54,7 @@ const PRODUCTS = [
     stars: 4,
     ingredients: 'Lechuga, Tomate, Hamburguesa, Bacon, Queso, Salsa Barbacoa',
     Family: 'Hamburguesa',
-    image: './assets/hamburguesa_bacon.png'
+    image: '/assets/hamburguesa_bacon.png'
   },
   {
     name: 'Hamburguesa con Huevo',
@@ -62,7 +62,7 @@ const PRODUCTS = [
     stars: 4,
     ingredients: 'Lechuga, Tomate, Hamburguesa, Queso, Huevo Frito, Mayonesa',
     Family: 'Hamburguesa',
-    image: './assets/hamburguesa_huevo.png'
+    image: '/assets/hamburguesa_huevo.png'
   },
   {
     name: 'Pancho Clásico',
@@ -70,7 +70,7 @@ const PRODUCTS = [
     stars: 3,
     ingredients: 'Salchicha, Pan, Ketchup, Mostaza',
     Family: 'Pancho',
-    image: './assets/pancho_clasico.png'
+    image: '/assets/pancho_clasico.png'
   },
   {
     name: 'Pancho con Queso',
@@ -78,7 +78,7 @@ const PRODUCTS = [
     stars: 4,
     ingredients: 'Salchicha, Pan, Queso Fundido, Ketchup, Mostaza',
     Family: 'Pancho',
-    image: './assets/pancho_queso.png'
+    image: '/assets/pancho_queso.png'
   },
   {
     name: 'Pancho con Panceta',
@@ -86,7 +86,7 @@ const PRODUCTS = [
     stars: 4,
     ingredients: 'Salchicha, Pan, Panceta, Ketchup, Mostaza, Mayonesa',
     Family: 'Pancho',
-    image: './assets/pancho_panceta.png'
+    image: '/assets/pancho_panceta.png'
   },
   {
     name: 'Pancho Completo',
@@ -94,7 +94,7 @@ const PRODUCTS = [
     stars: 4,
     ingredients: 'Salchicha, Pan, Queso, Panceta, Salsa Golf',
     Family: 'Pancho',
-    image: './assets/pancho_completo.png'
+    image: '/assets/pancho_completo.png'
   },
   {
     name: 'Pizza Margarita',
@@ -102,7 +102,7 @@ const PRODUCTS = [
     stars: 5,
     ingredients: 'Tomate, Queso Mozzarella, Albahaca, Aceite de Oliva',
     Family: 'Pizza',
-    image: './assets/pizza_margarita.png'
+    image: '/assets/pizza_margarita.png'
   },
   {
     name: 'Pizza Pepperoni',
@@ -110,7 +110,7 @@ const PRODUCTS = [
     stars: 5,
     ingredients: 'Tomate, Queso Mozzarella, Pepperoni, Orégano',
     Family: 'Pizza',
-    image: './assets/pizza_pepperoni.png'
+    image: '/assets/pizza_pepperoni.png'
   },
   {
     name: 'Pizza Cuatro Quesos',
@@ -118,7 +118,7 @@ const PRODUCTS = [
     stars: 5,
     ingredients: 'Queso Mozzarella, Queso Azul, Queso Parmesano, Queso Provolone',
     Family: 'Pizza',
-    image: './assets/pizza_cuatro_quesos.png'
+    image: '/assets/pizza_cuatro_quesos.png'
   },
   {
     name: 'Pizza Napolitana',
@@ -126,7 +126,7 @@ const PRODUCTS = [
     stars: 4,
     ingredients: 'Tomate, Queso Mozzarella, Anchoas, Aceitunas, Orégano',
     Family: 'Pizza',
-    image: './assets/pizza_napolitana.png'
+    image: '/assets/pizza_napolitana.png'
   },
   {
     name: 'Pizza Hawaiana',
@@ -134,7 +134,7 @@ const PRODUCTS = [
     stars: 3,
     ingredients: 'Tomate, Queso Mozzarella, Jamón, Piña',
     Family: 'Pizza',
-    image: './assets/pizza_hawaiana.png'
+    image: '/assets/pizza_hawaiana.png'
   },
   {
     name: 'Chivito Vegetariano',
@@ -142,7 +142,7 @@ const PRODUCTS = [
     stars: 4,
     ingredients: 'Lechuga, Tomate, Huevo Frito, Queso, Salsa de Yogurt',
     Family: 'Chivito',
-    image: './assets/chivito_vegetariano.png'
+    image: '/assets/chivito_vegetariano.png'
   },
   {
     name: 'Hamburguesa Vegetariana',
@@ -150,7 +150,7 @@ const PRODUCTS = [
     stars: 4,
     ingredients: 'Lechuga, Tomate, Hamburguesa de Garbanzos, Queso, Salsa de Yogurt',
     Family: 'Hamburguesa',
-    image: './assets/hamburguesa_vegetariana.png'
+    image: '/assets/hamburguesa_vegetariana.png'
   },
   {
     name: 'Pancho Vegetariano',
@@ -158,7 +158,7 @@ const PRODUCTS = [
     stars: 3,
     ingredients: 'Salchicha Vegetariana, Pan, Ketchup, Mostaza',
     Family: 'Pancho',
-    image: './assets/pancho_vegetariano.png'
+    image: '/assets/pancho_vegetariano.png'
   }
 ];
 
@@ -205,8 +205,8 @@ const printProduct = (Products) => {
     nameProduct.textContent = Product.name;
     ingredientsProduct.textContent = Product.ingredients;
     priceProduct.textContent = `${Product.price} €`;
-    const imgSrc1 = "public/assets/bolsa-de-la-compra.png";
-    const imgSrc2 = "public/assets/bolsa-de-la-compra´-menos.png";
+    const imgSrc1 = "/assets/bolsa-de-la-compra.png";
+    const imgSrc2 = "/assets/bolsa-de-la-compra-menos.png";
     cestaImg.src = imgSrc1
 
     divImgProduct.append(imgProduct);
@@ -247,14 +247,15 @@ const printProduct = (Products) => {
 printProduct(PRODUCTS);
 
 
-
 //aside de filtros
+
 const aside = document.querySelector(".Services");
 const selectFamily = document.querySelector('.select');
 const article = document.querySelector(".Cards-Serv");
 
 let selectedFamily = '';
 let maxPrice = Infinity;
+
 
 const createFilterFamily = () => {
 
@@ -284,6 +285,7 @@ const createFilterFamily = () => {
 
 };
 createFilterFamily();
+
 
 const createFilterPrice = () => {
 
@@ -315,6 +317,7 @@ const createFilterPrice = () => {
   aside.insertBefore(labelPrice, selectFamily);
 };
 createFilterPrice();
+
 
 const applyCombinedFilters = () => {
   const FILTERED = PRODUCTS.filter(product => {
