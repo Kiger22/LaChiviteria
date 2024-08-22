@@ -759,9 +759,13 @@ justify-content: center;
   transition: 0.7s;
 }
 
-#menuFooter select{
-  display:block;
+#menuFooter{
+  display:none;
+}
+
+#menuFooter {
   padding: 10px 10px;
+  background-color: transparent;
   border:transparent;
   border-radius: var(--rtc-border-radius);
   font-size: var(--kg-font-size-text);
@@ -814,7 +818,7 @@ justify-content: center;
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
   #footerImg{
     width: 8rem;
   }
